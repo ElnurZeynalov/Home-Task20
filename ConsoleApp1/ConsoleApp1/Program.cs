@@ -29,7 +29,6 @@ namespace ConsoleApp1
                             Student wantedStudent = studentCRUD.GetStudentByNo(no);
                             Console.Write("Imtahan adini daxil edin: ");
                             string examName = Console.ReadLine();
-                            Console.Write("Imtahandan topladigi bali daxil edin: ");
                             double examPoint = DoubleChecker("Imtahandan topladigi bali daxil edin: ", "Imtahan bali 0-100 arasi ve yalniz reqem olmalidir");
                             wantedStudent.AddExam(examName, examPoint);
                         }
